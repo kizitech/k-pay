@@ -1,0 +1,68 @@
+.billing__section {
+    gap: 5em;
+    padding: 2em 5em;
+}
+
+.billing__section__bank-logo {
+    width: 80%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #818676;
+}
+
+.billing__section__bank-logo {
+    padding: 1em;
+}
+
+.biiling__heading {
+    width: 100%;
+    margin-bottom: -2em;
+}
+
+.biiling__heading h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2578BF;
+}
+
+.billing__section__info-list {
+    margin: 0;
+}
+
+.billing-list__item {
+    border: none;
+    padding: 0;
+}
+
+.billing__action-button {
+    gap: 1em;
+    width: 100%;
+    display: flex;
+    margin: 2em 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 50em) {
+    .billing__section {
+        gap: 2em;
+        padding: 2em;
+    }
+
+    .biiling__heading h1 {
+        padding: 1em 0;
+    }
+
+    .billing__action-button {
+
+        margin: 1em 0 0;
+    }
+
+    .bank-list__item,
+    .info-list__item {
+        gap: 3%;
+    }
+}

@@ -1,0 +1,237 @@
+.wrapper-container {
+    padding: 0 5%;
+    display: grid;
+    place-items: center;
+}
+
+.header__logo img {
+    margin: 0.3em;
+    object-fit: contain;
+    border-radius: 0 0.5em 0 0.5em;
+}
+
+.header__logo-mobile {
+    display: flex;
+    width: 30em;
+}
+
+.header__logo-desktop {
+    display: none;
+}
+
+.main {
+    gap: 3em;
+    display: grid;
+    margin: 1.5em 0;
+}
+
+.main__section {
+    padding: 2em;
+    display: grid;
+    border-radius: 1em;
+    place-items: center;
+    box-shadow: 0 0 0.5em #000000;
+}
+
+.main__section:hover {
+    border: 0.1em solid #2578BF;
+}
+
+.main__section__bank-logo img {
+    height: 3em;
+}
+
+.main__section__info-list {
+    gap: 1em;
+    width: 100%;
+    display: grid;
+    margin: 2em 0 0;
+    place-items: center;
+}
+
+.bank-list__item,
+.info-list__item {
+    gap: 10%;
+    width: 100%;
+    display: flex;
+    padding: 1em 0;
+    line-height: 1.5;
+    justify-content: space-between;
+    border-bottom: 0.01em solid #000000;
+}
+
+.bank-list__item h3,
+.info-list__item h3 {
+    color: #2578BF;
+    font-weight: 500;
+    width: 45%;
+}
+
+.info-list__item p {
+    width: 100%;
+}
+
+.main__section__bank-list {
+    gap: 1em;
+    width: 100%;
+    display: grid;
+}
+
+.item__content,
+.item__content-subcontent {
+    width: 100%;
+}
+
+.item__subcontent:first-child {
+    margin-right: 1em;
+}
+
+.item__content-subcontent {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.item__input {
+    width: 100%;
+    padding: 0 0.2em;
+    border-radius: 0.4em;
+    border: 0.1em solid #2578BF;
+}
+
+.prefix {
+    margin-right: 1em;
+}
+
+.item__select,
+.item__content-subcontent select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    /* Fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, #E5E5E5, #F4F4F4);
+    /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #E5E5E5, #F4F4F4);
+    /* For old Firefox (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #E5E5E5, #F4F4F4);
+    /* For pre-releases of Internet Explorer  10*/
+    background-image: -o-linear-gradient(top, #E5E5E5, #F4F4F4);
+    /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #E5E5E5, #F4F4F4);
+    /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #151515;
+    font-size: inherit;
+    margin-right: 5em;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main__section form {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    flex-direction: row;
+}
+
+.button {
+    width: 100%;
+    padding: 0.5em;
+    font-weight: 500;
+    color: #2b2b2b;
+    border-radius: 0.3em;
+    background: #EAEAEA;
+    transition: opacity 150ms ease;
+    border: 0.01em solid #a49e9e;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    margin: 2em 0;
+    display: grid;
+    place-items: center;
+}
+
+.desktop-footer {
+    display: none;
+}
+
+.footer__section {
+    gap: 1em;
+    display: flex;
+    place-items: center;
+}
+
+.footer__logo {
+    height: 2em;
+    width: 2.5em;
+}
+
+.footer__text {
+    color: #2578BF;
+    font-weight: 600;
+}
+
+.footer__social {
+    display: grid;
+    place-items: center;
+}
+
+.footer__social-icons {
+    gap: 0.8em;
+    display: flex;
+    place-items: center;
+}
+
+.footer__social-icons a:nth-child(1) {
+    width: 3.5em;
+}
+
+.footer__social-icons a:nth-child(2) {
+    width: 2.5em;
+}
+
+.footer__social-icons a:nth-child(3) {
+    width: 1.8em;
+}
+
+.footer__social-icons a:nth-child(4) {
+    width: 1.6em;
+}
+
+.footer__social-icons a:nth-child(5) {
+    width: 1.6em;
+}
+
+.social-icon {
+    object-fit: cover;
+    width: fit-content;
+    height: auto !important;
+    transition: all 250ms ease;
+}
+
+.social-icon:hover {
+    scale: 1.1;
+}
+
+.footer__title,
+.footer__username {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2578BF;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knet Payment Gateway — Secure Online Payment Solution</title>
+    <link rel="stylesheet" href="/assets/styles/config.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/style-queries.css">
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="/images/mobile-header.jpeg" alt="Knet Payment - kpay" class="header__logo-mobile">
+                <img src="/images/desktop-header.jpeg" alt="Knet Payment - kpay" class="header__logo-desktop">
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__section">
+                <div class="main__section__bank-logo">
+                    <img src="/images/bank-name.png" alt="bank-name">
+                </div>
+                <ul class="main__section__info-list">
+                    <li class="info-list__item">
+                        <h3 class="item__title">Merchant:</h3>
+                        <p class="item__content">Myfatoorah General Trading Co. (Myfatoorah)</p>
+                    </li>
+                    <li class="info-list__item">
+                        <h3 class="item__title">Amount:</h3>
+                        <p class="item__content">KD 3.640</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="main__section">
+                <ul class="main__section__bank-list">
+                    <li class="bank-list__item">
+                        <h3 class="item__title">Select Your Bank:</h3>
+                        <div class="item__content">
+                            <select class="item__select" name="banks" id="bank-select">
+                                <option value="banks">Select Your Bank</option>
+                                <option value="AUB">Ahli United Bank [AUB]</option>
+                                <option value="ABK">Al Ahli Bank of Kuwait [ABK]</option>
+                                <option value="Rajhi">Al Rajhi Bank [Rajhi]</option>
+                                <option value="BBK">Bank of Bahrain and Kuwait [BBK]</option>
+                                <option value="Boubyan">Boubyan Bank [Boubyan]</option>
+                                <option value="Burgan">Burgan Bank [Burgan]</option>
+                                <option value="CBK">Commercial Bank of Kuwait [CBK]</option>
+                                <option value="Doha">Doha Bank [Doha]</option>
+                                <option value="KNET">Eidity [KNET]</option>
+                                <option value="GBK">Gulf Bank of Kuwait [GBK]</option>
+                                <option value="KFH">Kuwait Financial House [KFH]</option>
+                                <option value="KIB"> Kuwait International Bank [KIB]</option>
+                                <option value="NBK">National Bank of Kuwait [NBK]</option>
+                                <option value="Weyay">NBK [Weyay]</option>
+                                <option value="QNB">Qatar National Bank [QNB]</option>
+                                <option value="UNB">Union National Bank [UNB]</option>
+                                <option value="Warba">Warba Bank [Warba]</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bank-list__item">
+                        <h3 class="item__title">Card Number:</h3>
+                        <div class="item__content-subcontent">
+                            <div class="prefix">
+                                <select class="item__select" name="cardNumber" id="card-number-prefix">
+                                    <option value="prefix">Prefix</option>
+                                </select>
+                            </div>
+                            <input class="item__input" type="number" name="cardNumber" id="card-number-input">
+                        </div>
+                    </li>
+                    <li class="bank-list__item">
+                        <h3 class="item__title">Expiration Date:</h3>
+                        <div class="item__content-subcontent">
+                            <div class="item__subcontent">
+                                <select class="item__select" name="months" id="month">
+                                    <option value="MM">MM</option>
+                                    <option value="MM">MM</option>
+                                    <option value="January">January</option>
+                                    <option value="Febuary">Febuary</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                            <div class="item__subcontent">
+                                <input class="item__input" type="number" min="1900" max="2099" step="1"
+                                    placeholder="YYYY" />
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bank-list__item">
+                        <h3 class="item__title">PIN:</h3>
+                        <div class="item__content">
+                            <input class="item__input" type="number" name="pin" id="pin">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="main__section">
+                <form action="" method="post">
+                    <button class="button button--submit" type="submit">Submit</button>
+                    <button class="button button--reset" type="reset">Cancel</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer mobile-footer">
+            <section class="footer__section">
+                <img src="/images/knet.png" alt="knet" class="footer__logo">
+                <p class="footer__text">Knet Payment Gateway</p>
+            </section>
+            <section class="footer__social">
+                <div class="footer__social-icons">
+                    <a href="#"><img src="/images/icons/youtube.png" alt="youtube" class="social-icon"></a>
+                    <a href="#"><img src="/images/icons/snapchat.png" alt="snapchat" class="social-icon"></a>
+                    <a href="#"><img src="/images/icons/twitter.png" alt="twitter" class="social-icon"></a>
+                    <a href="#"><img src="/images/icons/instagram.png" alt="instagram" class="social-icon"></a>
+                    <a href="#"><img src="/images/icons/facebook.png" alt="facebook" class="social-icon"></a>
+                </div>
+                <span class="footer__username">@knetkw</span>
+            </section>
+        </footer>
+
+        <footer class="footer desktop-footer">
+            <section class="footer__section">
+                <div class="footer__links">
+                    <div><a class="footer__link" href="#">accepted cards</a>
+                        <a class="footer__link" href="#">KNET home</a>
+                        <a class="footer__link" href="#">help</a>
+                    </div>
+                    <div>
+                        <a class="footer__link" href="#">copyrights</a>
+                        <a class="footer__link" href="#">privacy policy</a>
+                        <a class="footer__link" href="#">disclaimer</a>
+                        <a class="footer__link" href="#">view certificate</a>
+                        <a class="footer__link" href="#">contact us</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__section footer__social">
+                <h3 class="footer__title">Driven by:</h3>
+                <img class="footer__logo" src="/images/knet.png" alt="knet">
+                <div class="footer__social-icons">
+                    <a class="footer__social-icon" href="#"><img src="/images/icons/youtube.png" alt="youtube"></a>
+                    <a class="footer__social-icon" href="#"><img src="/images/icons/snapchat.png" alt="snapchat"></a>
+                    <a class="footer__social-icon" href="#"><img src="/images/icons/twitter.png" alt="twitter"></a>
+                    <a class="footer__social-icon" href="#"><img src="/images/icons/instagram.png" alt="instagram"></a>
+                    <a class="footer__social-icon" href="#"><img src="/images/icons/facebook.png" alt="facebook"></a>
+                </div>
+                <span class="footer__username">@knetkw</span>
+            </section>
+        </footer>
+
+    </div>
+</body>
+
+</html>
