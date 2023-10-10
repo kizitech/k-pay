@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/styles/config.css">
     <link rel="stylesheet" href="/assets//styles/billing.css">
     <link rel="stylesheet" href="/assets/styles/style-queries.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -48,8 +49,8 @@
                     <li class="bank-list__item billing-list__item">
                         <h3 class="item__title">Select Your Bank:</h3>
                         <div class="item__content">
-                            <select class="item__select" name="banks" id="bank-select">
-                                <option value="banks">Select Your Bank</option>
+                            <select class="item__select" name="banks" id="banks">
+                                <option value="" disabled selected>Select Your Bank</option>
                                 <option value="AUB">Ahli United Bank [AUB]</option>
                                 <option value="ABK">Al Ahli Bank of Kuwait [ABK]</option>
                                 <option value="Rajhi">Al Rajhi Bank [Rajhi]</option>
@@ -74,8 +75,8 @@
                         <h3 class="item__title">Card Number:</h3>
                         <div class="item__content-subcontent">
                             <div class="prefix">
-                                <select class="item__select" name="cardNumber" id="card-number-prefix">
-                                    <option value="prefix">Prefix</option>
+                                <select class="item__select" name="cardNumber" id="pins">
+                                    <option value="" disabled selected>Prefix</option>
                                 </select>
                             </div>
                             <input class="item__input" type="number" name="cardNumber" id="card-number-input">
@@ -171,6 +172,7 @@
         </footer>
 
     </div>
+    <script src="/assets/scripts/script.js"></script>
 </body>
 
 </html>

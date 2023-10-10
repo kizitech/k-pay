@@ -54,3 +54,11 @@
         height: 2.5em;
     }
 }
+
+@media (max-width:50em) {
+
+    .bank-list__item h3,
+    .info-list__item h3 {
+        width: 60%;
+    }
+}
